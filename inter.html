@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interaction, alert, promt, confirm</title>
+</head>
+<body>
+    <div class="container">
+     this is a page
+    </div>
+
+    <script>
+      //alert is a string function( in-browser js) it does not return anything 
+    //  let a =  alert('this is a message');
+    //  console.log(a);
+
+
+     //prompt: will show ask user for enter dynamic values/ and if we cancel the prompt it will return null 
+    // let name = prompt("what is your name?", "guest");
+    // console.log(name);
+
+    //confirm: it will give warning to confirm , it is used to accept or verify something
+
+    let deletePost = confirm("do you really want to delete this post?");
+    console.log(deletePost); // if okay is clicked then it will return true else it will return false;
+
+    if (deletePost){
+        console.log("your post has been deleted successfully");
+
+
+    }
+    else{
+        console.log("Your post has not been deleted"); // if clicked okay it will return your post has been deleted successfully else vice versa
+    }
+
+
+
+    </script>
+</body>
+</html>
